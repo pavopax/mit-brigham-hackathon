@@ -6,9 +6,11 @@ Quick Start
 ===============================================================================
 generate a dataset with `/programs/1-simulate.R`
 
-## input:
+**input:**
 * dataset of patient IDs in `/data/pats.csv`
 
+**output:**
+* `/data/dset.csv` [or .rds]
 
 Contents
 ===============================================================================
