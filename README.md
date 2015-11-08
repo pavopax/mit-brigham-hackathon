@@ -1,14 +1,14 @@
 ## Deriving value from medical records
 
-This project was a component of a submission for the
-[MIT/Brigham and Women's Hospital Hacking Medicine Hackathon](http://disruptingmedicine.org/collaboration-series-events/2015-hackathon/)
-
-
 ![one](https://raw.githubusercontent.com/pavopax/mit-brigham-hackathon/master/docs/poster.jpg)
 
 
 Intro
 ===============================================================================
+This project was a component of a submission for the
+[MIT/Brigham and Women's Hospital Hacking Medicine Hackathon](http://disruptingmedicine.org/collaboration-series-events/2015-hackathon/)
+
+
 This repository contains R programs to:
 
   * download OpenEpic/FHIR Electronic Medical Record data, and
