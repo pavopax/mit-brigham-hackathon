@@ -17,7 +17,7 @@ age.range <- 18:40                      # patient ages
 
 
 ## ============================================================================
-## SIMULATE and COMBINE
+## SIMULATE data
 ## ============================================================================
 abx <- rbinom(n=nn, size=1, prob=abx.prop)
 age <- sample(age.range, nn, replace = TRUE)

@@ -1,16 +1,22 @@
 ## Deriving value from medical records
-A project for the MIT-Brigham and Women's Hospital Hackathon
+A project for the MIT/Brigham and Women's Hospital Hackathon
 
 
 Quick Start
 ===============================================================================
-generate a dataset with `/programs/1-simulate.R`
+This project contains programs to simulate a medical dataset.
+
+Generate a dataset with `/programs/1-simulate.R`
 
 **input:**
-* dataset of patient IDs in `/data/pats.csv`
+* dataset of patient IDs from `/data/pats.csv`
 
 **output:**
-* `/data/dset.csv` [or .rds]
+* `/data/dset.csv` [or `.rds`]
+
+
+
+Documentation is in `/docs`
 
 Contents
 ===============================================================================
