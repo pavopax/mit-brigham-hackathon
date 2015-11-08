@@ -3,7 +3,7 @@ source("header.R")
 mrn <- read.csv("../../data/input/pats.csv", stringsAsFactors=FALSE, header=FALSE)[,1]
 nn <- length(mrn)
 
-cat("This program will download data and create an output dataset.\n")
+cat("THIS PROGRAM WILL DOWNLOAD DATA AND CREATE AN OUTPUT DATASET.\n\n")
 cat("Downloading data for ", nn, "patids...\n")
 
 mydata <- data.frame()
