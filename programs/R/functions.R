@@ -1,12 +1,10 @@
-## DOCUMENT THESE WITH TAGS
-
-
-## tags: download curl one patient
-## output: one record, a few vars
+## tags: fix null value
 fix_null <- function(var){
     ifelse(is.null(var), "", var)
 }
 
+## tags: download curl one patient
+## output: one record, a few vars
 get_patient <- function(patid){
     url <- paste0("https://open-ic.epic.com/FHIR/api/FHIR/DSTU2/Condition?patient=", patid,
                   "&category=diagnosis")
@@ -29,7 +27,7 @@ get_patient <- function(patid){
     patient
 }
 
-
+## test one record
 test_patient <- function(patid){
     url <- paste0("https://open-ic.epic.com/FHIR/api/FHIR/DSTU2/Condition?patient=", patid,
                   "&category=diagnosis")

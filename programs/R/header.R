@@ -1,6 +1,6 @@
 ## ============================================================================
 ## initialization file for this project
-## Paull Paczuski [pavopax.com] [AMA!]
+## Paul Paczuski [pavopax.com] [AMA!]
 ## ============================================================================
 
 library(RCurl)

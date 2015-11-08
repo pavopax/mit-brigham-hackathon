@@ -6,15 +6,13 @@
 Intro
 ===============================================================================
 This project was a component of a submission for the
-[MIT/Brigham and Women's Hospital Hacking Medicine Hackathon](http://disruptingmedicine.org/collaboration-series-events/2015-hackathon/)
+[MIT/Brigham and Women's Hospital Hacking Medicine Hackathon](http://disruptingmedicine.org/collaboration-series-events/2015-hackathon/).
 
 
-This repository contains R programs to:
+This repository contains R programs to create a sample EMR dataset, via:
 
-  * download OpenEpic/FHIR Electronic Medical Record data, and
-  * combine it with some simulated data
-
-to create a sample EMR dataset for further analysis.
+  * downloading OpenEpic/FHIR Electronic Medical Record data, and
+  * combining it with some simulated data
 
 
 
@@ -31,12 +29,6 @@ Quick Start
 3. Download data from command line with: `Rscript 0-download.R`
 
 4. Combine downloaded and simulated data with: `Rscript 1-makedata.R`
-
-
-
-
-
-
 
 Contents
 ===============================================================================
