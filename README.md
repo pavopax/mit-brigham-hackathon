@@ -41,7 +41,7 @@ Contents
 Programs
 ===============================================================================
 *see /programs/R*  
-*depend on `header.R and functions.R`*  
+*programs depend on `header.R and functions.R`*  
 
 `0-download.R`
 
