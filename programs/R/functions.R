@@ -13,12 +13,12 @@ get_patient <- function(patid){
     xmlf <- getURL(url) %>% xmlParse()
     listf <- xmlToList(xmlf)
 
-    name <- listf$entry$resource$Condition$patient$display[[1]]
-    diagnosis <- listf$entry$resource$Condition$code$coding$display[[1]]
-    date <- listf$entry$resource$Condition$onsetDateTime[[1]]
-    physician <- fix_null(listf$entry$resource$Condition$asserter$display[[1]])
-    code1 <- listf$entry$resource$Condition$code$coding$code[[1]]
-    code2 <- listf$entry$resource$Condition$code[[3]]$code[[1]]
+    name <- listf$entry$resource$Condition$patient$display[[1]] %>% fix_null()
+    diagnosis <- listf$entry$resource$Condition$code$coding$display[[1]] %>% fix_null()
+    date <- listf$entry$resource$Condition$onsetDateTime[[1]] %>% fix_null()
+    physician <- listf$entry$resource$Condition$asserter$display[[1]] %>% fix_null()
+    code1 <- listf$entry$resource$Condition$code$coding$code[[1]] %>% fix_null()
+    code2 <- listf$entry$resource$Condition$code[[3]]$code[[1]] %>% fix_null()
 
     patient <- data.frame(patid, name,
                           diagnosis=diagnosis,

@@ -6,7 +6,14 @@ Quick Start
 ===============================================================================
 This project contains programs to simulate a medical dataset.
 
-Generate a dataset with `/programs/R/1-simulate.R`. 
+1. Install requirements (see below).
+
+2. Download data with:
+`Rscript /programs/R/0-download.R`
+
+3. Combine downloaded with simulated data with:
+`Rscript /programs/R/1-makedata.R`
+
 
 **input:** dataset of patient IDs from `/data/inputs/pats.csv`
 
@@ -30,6 +37,7 @@ For additonal documentation and references see `/docs`.
 Contents
 ===============================================================================
 * [Programs](#programs)
+* [Requirements](#requirements))
 * [Details](#details)
 * [Sources](#sources)
 
@@ -44,6 +52,12 @@ simulate data
 `2-analyze.R`
 
 analyze the data
+
+
+
+Requirements
+===============================================================================
+R, and the R packages in `/programs/R/header.R`
 
 
 

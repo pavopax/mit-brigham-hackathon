@@ -3,21 +3,23 @@ source("header.R")
 mrn <- read.csv("../../data/input/pats.csv", stringsAsFactors=FALSE, header=FALSE)[,1]
 nn <- length(mrn)
 
-
+cat("This program will download data and create an output dataset.\n")
+cat("Downloading data for ", nn, "patids...\n")
 
 mydata <- data.frame()
 
-for(i in 1:20){
+for(i in 1:nn){
     cat(i," ")
     pp <- mrn[i]
     row <- get_patient(pp)
     mydata <- bind_rows(mydata,row)
 }
 
-pp <- mrn[1]
-test_patient(pp)
 
+cat("Writing output...\n")
 
-get_patient(pp)
+write.csv(mydata, file="../../data/fhir_out.csv")
+
+cat("DONE\n")
 
 

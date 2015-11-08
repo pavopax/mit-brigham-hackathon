@@ -1,7 +1,7 @@
 source("header.R")
 
 ## or use csv
-dset <- readRDS("../data/dset.rds")
+dset <- readRDS("../../data/final.rds")
 
 ## ============================================================================
 ## SUMMARIZE data
