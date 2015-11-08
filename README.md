@@ -2,34 +2,51 @@
 A project for the MIT/Brigham and Women's Hospital Hackathon
 
 
+![one](https://raw.githubusercontent.com/pavopax/mit-brigham-hackathon/master/docs/good-bad-icon.png.)
+
+
 Quick Start
 ===============================================================================
-This project contains programs to simulate a medical dataset.
+This project contains R programs to:
 
-1. Install requirements (see below).
+  * download OpenEpic/FHIR Electronic Medical Record data, and
+  * combine it with some simulated data
 
-2. Download data with:
-`Rscript /programs/R/0-download.R`
+to create a sample EMR dataset for further analysis.
 
-3. Combine downloaded with simulated data with:
-`Rscript /programs/R/1-makedata.R`
-
-
-**input:** dataset of patient IDs from `/data/inputs/pats.csv`
-
-**output:** `/data/dset.csv` [or `.rds`]
+This project was a component of a submission at
+[the MIT/Brigham and Women's Hospital Hacking Medicine Hackathon](http://disruptingmedicine.org/collaboration-series-events/2015-hackathon/)
 
 
 
-`/data/`
+1. Install requirements (R, and the R packages in
+   `/programs/R/header.R`).
 
-* contains output datasets
+> System: Mac OS X with Terminal
 
-`/data/inputs/` 
+2. Navigate to `/programs/R`
 
-* contains input datasets
+3. Download data from command line with: `Rscript 0-download.R`
 
-For additonal documentation and references see `/docs`.
+4. Combine downloaded and simulated data with: `Rscript 1-makedata.R`
+
+
+**inputs:**  
+dataset of patient IDs from `/data/inputs/pats.csv`
+
+**output:**  
+`/data/dset.csv` [or `.rds`]
+
+
+
+`/data/[/input]`
+
+* contains input/output datasets
+
+
+`/docs`
+
+* documents and images
 
 
 
@@ -44,14 +61,23 @@ Contents
 
 Programs
 ===============================================================================
+> see /programs/R
+> depend on `header.R and functions.R`
+
+`0-download.R`
+
+Download data from OpenEpic/FHIR for some specified patient IDs
+(`/data/input/pats.csv`)
+
 `1-simulate.R`
 
-simulate data
+Simulate some additional data (age, antibiotic [abx] use) and combine
+with downloaded data.
 
 
 `2-analyze.R`
 
-analyze the data
+Run some analyses (working).
 
 
 
@@ -63,7 +89,10 @@ R, and the R packages in `/programs/R/header.R`
 
 Details
 ===============================================================================
+n/a
+
 
 Sources 
 ===============================================================================
-n/a
+
+[https://open.epic.com/Interface/FHIR](https://open.epic.com/Interface/FHIR)
