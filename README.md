@@ -1,11 +1,13 @@
 ## Deriving value from medical records
-A project for the MIT/Brigham and Women's Hospital Hackathon
+
+This project was a component of a submission at
+[the MIT/Brigham and Women's Hospital Hacking Medicine Hackathon](http://disruptingmedicine.org/collaboration-series-events/2015-hackathon/)
 
 
 ![one](https://raw.githubusercontent.com/pavopax/mit-brigham-hackathon/master/docs/poster.jpg)
 
 
-Quick Start
+Intro
 ===============================================================================
 This project contains R programs to:
 
@@ -14,15 +16,15 @@ This project contains R programs to:
 
 to create a sample EMR dataset for further analysis.
 
-This project was a component of a submission at
-[the MIT/Brigham and Women's Hospital Hacking Medicine Hackathon](http://disruptingmedicine.org/collaboration-series-events/2015-hackathon/)
 
 
+Quick Start
+===============================================================================
+
+*System: Mac OS X with Terminal*
 
 1. Install requirements (R, and the R packages in
    `/programs/R/header.R`).
-
-> System: Mac OS X with Terminal
 
 2. Navigate to `/programs/R`
 
@@ -31,22 +33,7 @@ This project was a component of a submission at
 4. Combine downloaded and simulated data with: `Rscript 1-makedata.R`
 
 
-**inputs:**  
-dataset of patient IDs from `/data/inputs/pats.csv`
 
-**output:**  
-`/data/dset.csv` [or `.rds`]
-
-
-
-`/data/[/input]`
-
-* contains input/output datasets
-
-
-`/docs`
-
-* documents and images
 
 
 
@@ -55,7 +42,7 @@ Contents
 ===============================================================================
 * [Programs](#programs)
 * [Requirements](#requirements))
-* [Details](#details)
+* [Misc](#misc)
 * [Sources](#sources)
 
 
@@ -87,9 +74,9 @@ R, and the R packages in `/programs/R/header.R`
 
 
 
-Details
+Misc
 ===============================================================================
-n/a
+`/docs` contains documents and images
 
 
 Sources 
