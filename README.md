@@ -2,7 +2,7 @@
 A project for the MIT/Brigham and Women's Hospital Hackathon
 
 
-![one](https://raw.githubusercontent.com/pavopax/mit-brigham-hackathon/master/docs/poster.png)
+![one](https://raw.githubusercontent.com/pavopax/mit-brigham-hackathon/master/docs/poster.jpg)
 
 
 Quick Start
