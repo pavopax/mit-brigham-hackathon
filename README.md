@@ -1,4 +1,4 @@
-## Deriving value from medical records
+## Minimizing variability in clinical practice to save costs and improve quality
 
 ![one](https://raw.githubusercontent.com/pavopax/mit-brigham-hackathon/master/docs/poster.jpg)
 
@@ -14,7 +14,8 @@ This repository contains R programs to create a sample EMR dataset, via:
   * downloading OpenEpic/FHIR Electronic Medical Record data, and
   * combining it with some simulated data
 
-
+The resultant dataset can be analyzed to identify efficiencies and summarize
+potential savings.
 
 Quick Start
 ===============================================================================
