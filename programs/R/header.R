@@ -3,6 +3,10 @@
 ## Paull Paczuski [pavopax.com] [AMA!]
 ## ============================================================================
 
+library(RCurl)
+library(RJSONIO)
+library(XML)
+
 library(dplyr)
 library(tidyr)
 library(ggplot2)

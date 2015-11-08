@@ -3,7 +3,7 @@ source("header.R")
 ## ============================================================================
 ## READ IN INPUTS
 ## ============================================================================
-mrn <- read.csv("../data/pats.csv", stringsAsFactors=FALSE, header=FALSE)[,1]
+mrn <- read.csv("../../data/input/pats.csv", stringsAsFactors=FALSE, header=FALSE)[,1]
 
 
 
@@ -31,7 +31,7 @@ dset <- data.frame(mrn, age, abx, stringsAsFactors=FALSE)
 ## ============================================================================
 ## OUTPUT
 ## ============================================================================
-saveRDS(dset,"../data/dset.rds")
-write.csv(dset, file="../data/dset.csv")
+saveRDS(dset,"../../data/dset.rds")
+write.csv(dset, file="../../data/dset.csv")
 
 
