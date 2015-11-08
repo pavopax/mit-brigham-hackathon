@@ -6,7 +6,7 @@ Quick Start
 ===============================================================================
 This project contains programs to simulate a medical dataset.
 
-Generate a dataset with `/programs/1-simulate.R`
+Generate a dataset with `/programs/R/1-simulate.R`
 
 **input:**
 * dataset of patient IDs from `/data/pats.csv`
@@ -16,13 +16,13 @@ Generate a dataset with `/programs/1-simulate.R`
 
 
 
-Documentation is in `/docs`
+For additonal documentation and references see `/docs`.
 
 Contents
 ===============================================================================
 * [Programs](#programs)
 * [Details](#details)
-* [Sources](#Sources)
+* [Sources](#sources)
 
 
 Programs
