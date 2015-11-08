@@ -21,10 +21,10 @@ age.range <- 18:40                      # patient ages
 ## ============================================================================
 abx <- rbinom(n=nn, size=1, prob=abx.prop)
 age <- sample(age.range, nn, replace = TRUE)
-
+provider <- runif(nn, 1, 10) %>% floor()
 
 ## combine into a dataset
-dset <- data.frame(mrn, age, abx, stringsAsFactors=FALSE)
+dset <- data.frame(mrn, age, abx, provider, stringsAsFactors=FALSE)
 
 
 
