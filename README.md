@@ -1,7 +1,7 @@
 ## Deriving value from medical records
 
-This project was a component of a submission at
-[the MIT/Brigham and Women's Hospital Hacking Medicine Hackathon](http://disruptingmedicine.org/collaboration-series-events/2015-hackathon/)
+This project was a component of a submission for the
+[MIT/Brigham and Women's Hospital Hacking Medicine Hackathon](http://disruptingmedicine.org/collaboration-series-events/2015-hackathon/)
 
 
 ![one](https://raw.githubusercontent.com/pavopax/mit-brigham-hackathon/master/docs/poster.jpg)
@@ -9,7 +9,7 @@ This project was a component of a submission at
 
 Intro
 ===============================================================================
-This project contains R programs to:
+This repository contains R programs to:
 
   * download OpenEpic/FHIR Electronic Medical Record data, and
   * combine it with some simulated data
@@ -41,15 +41,15 @@ Quick Start
 Contents
 ===============================================================================
 * [Programs](#programs)
-* [Requirements](#requirements))
+* [Requirements](#requirements)
 * [Misc](#misc)
 * [Sources](#sources)
 
 
 Programs
 ===============================================================================
-> see /programs/R
-> depend on `header.R and functions.R`
+*see /programs/R*  
+*depend on `header.R and functions.R`*  
 
 `0-download.R`
 
@@ -58,7 +58,7 @@ Download data from OpenEpic/FHIR for some specified patient IDs
 
 `1-simulate.R`
 
-Simulate some additional data (age, antibiotic [abx] use) and combine
+Simulate some additional data (age, antibiotic [abx] use), and combine
 with downloaded data.
 
 
